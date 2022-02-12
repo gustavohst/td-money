@@ -2,7 +2,16 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     :root {
-        --background: #f0f2f5;
+        --red: #E62E4D;
+        --blue: #5429CC
+        
+        --blue-light: #6933ff;
+        
+        --text-title: #363F5F;
+        --text-body: #969CB3;
+        
+        --background: #F0F2F5;
+        --shape: #ffffff;
     }
 
     * {
@@ -13,13 +22,12 @@ export const GlobalStyle = createGlobalStyle`
 
     html { 
         @media (max-width: 1080px) {
-            font-size: 93.75%;
+            font-size: 93.75%; //using % helps the people who need increace the font size the application will works fine on the cellphone
         }
 
         @media (max-width: 720px) {
             font-size: 87.5%;
         }
-
     }
 
     body { 
@@ -27,6 +35,12 @@ export const GlobalStyle = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
     }
 
+    button { 
+        cursor: pointer; 
+    }
 
-
+    [disabled] {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
 `
