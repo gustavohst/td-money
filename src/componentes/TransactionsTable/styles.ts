@@ -26,6 +26,15 @@ export const Container = styled.section`
             &:first-child {
                 color: var(--text-title);
             }
+
+            &.deposit {
+                color: var(--green);
+            }
+
+            &.withdraw {
+                color: var(--red);
+            }
+
         }
     }
 `
